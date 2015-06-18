@@ -1,5 +1,20 @@
 <template name="scoreCreate">
     <form>
-        Create Score
+        <div class="form-group">
+            <label for="description">Описание</label>
+            <textarea id="description" name="description" class="form-control" autofocus required="required"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="value">Баллы</label>
+            <input type="number" id="value" name="value" class="form-control" required="required"/>
+        </div>
+
+        <div class="form-group">
+            <label for="owner">Кому</label>
+            <input type="text" id="owner" name="owner" class="form-control" required="required"/>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Сохранить</button>
     </form>
 </template>
