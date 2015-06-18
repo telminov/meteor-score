@@ -1,5 +1,5 @@
 Template.scoreList.helpers({
     score: function() {
-        return Score.find();
+        return Score.find({}, {sort: {date: -1}});
     }
 });
