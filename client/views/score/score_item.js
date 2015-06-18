@@ -1,5 +1,5 @@
 Template.scoreItem.helpers({
     isoDate: function() {
-        return this.date.toISOString().substring(0, 19)
+        return this.date.toISOString().substring(0, 16).replace('T', ' ')
     }
 });
