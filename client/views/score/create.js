@@ -14,7 +14,7 @@ Template.scoreCreate.events({
 
         Meteor.call('createScore', scoreData, function (error, scoreId){
             if (error) {
-                return alert(error.reason);
+                throwError(error.reason);
             } else {
                 Router.go('scoreList');
             }

@@ -15,7 +15,7 @@ Template.scoreEdit.events({
 
         Score.update(currentScore, {$set: scoreData}, function (error) {
             if (error) {
-                alert(error.reason);
+                throwError(error.reason);
             } else {
                 Router.go('scoreList');
             }
