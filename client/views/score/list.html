@@ -1,0 +1,33 @@
+<template name="scoreList">
+    <div class="row">
+        <div class="col-md-12">
+            <a  href="{{pathFor 'scoreCreate'}}" class="btn btn-block btn-primary">
+                <i class="glyphicon glyphicon-plus"></i>
+                Добавить баллы
+            </a>
+        </div>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Описание</th>
+                        <th>Баллы</th>
+                        <th>Дата</th>
+                        <th>Создал</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {{#each score}}
+                      {{> scoreItem}}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</template>

@@ -1,6 +1,10 @@
 <template name="scoreItem">
     <tr>
-        <td>{{description}}</td>
+        <td>
+            <a href="{{pathFor 'scoreEdit'}}">
+                {{description}}
+            </a>
+        </td>
         <td>{{value}}</td>
         <td>{{isoDate}}</td>
         <td>{{creatorUserName}}</td>
