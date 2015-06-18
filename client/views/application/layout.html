@@ -1,10 +1,6 @@
 <template name="layout">
     <div class="container">
-        <header class="navbar navbar-default" role="navigation">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="{{pathFor 'scoreList'}}">Мои баллы</a>
-            </div>
-        </header>
+        {{> header}}
         <div class="container-fluid">
             {{> yield}}
         </div>
